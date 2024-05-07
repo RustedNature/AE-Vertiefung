@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crash", "Crash\Crash.csproj", "{4CCD11A9-5C18-46F2-B33D-1151C6DA0BA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_StreamInOutput", "01_StreamInOutput\01_StreamInOutput.csproj", "{AC597D7E-1B3F-442C-A346-4AC1114F288B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4CCD11A9-5C18-46F2-B33D-1151C6DA0BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CCD11A9-5C18-46F2-B33D-1151C6DA0BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CCD11A9-5C18-46F2-B33D-1151C6DA0BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC597D7E-1B3F-442C-A346-4AC1114F288B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC597D7E-1B3F-442C-A346-4AC1114F288B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC597D7E-1B3F-442C-A346-4AC1114F288B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC597D7E-1B3F-442C-A346-4AC1114F288B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
