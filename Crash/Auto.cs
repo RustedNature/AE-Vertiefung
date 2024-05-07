@@ -8,13 +8,13 @@ namespace Crash
 {
     internal class Auto : Fahrzeug
     {
-        private int countDoors;
+        private int anzahlTueren;
 
         public Auto(string marke, int countDoors) : base(marke)
         {
-            CountDoors = countDoors;
+            AnzahlTueren = countDoors;
         }
 
-        public int CountDoors { get => countDoors; set => countDoors = value; }
+        public int AnzahlTueren { get => anzahlTueren; set => anzahlTueren = value; }
     }
 }
