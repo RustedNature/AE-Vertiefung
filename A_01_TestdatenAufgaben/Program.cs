@@ -13,6 +13,10 @@ internal class Program
         MostUsedProvider(csvList);
         GroupByAge(csvList);
         ListAllCostumerWithBdayEntry(csvList);
+
+        Console.ReadLine();
+
+        PrintAllEntrys(csvList);
     }
 
     private static void ListAllCostumerWithBdayEntry(CsvData csvList)
@@ -112,8 +116,8 @@ internal class Program
 
     private static void GetCountPersonenNewsletter(CsvData csvData)
     {
-        int sum;
         Console.WriteLine("Aufgabe 1");
+        int sum;
 
         int newsletterColumn = csvData[0].IndexOf("Newsletter");
 
@@ -128,10 +132,28 @@ internal class Program
 
     private static void PrintAllEntrys(CsvData csvList)
     {
-        csvList.ForEach(line =>
+        Console.WriteLine("Aufgabe 6");
+
+        csvList.First().ForEach(csv =>
         {
-            line.ForEach(cell => Console.Write(cell + " | "));
-            Console.WriteLine();
+            Console.Write(csv + " | ");
+        });
+        Console.WriteLine();
+        csvList.Skip(1).ToList().ForEach(line =>
+        {
+            _ = int.TryParse(line[0], out int entryNumber);
+            if (entryNumber % 50 == 0)
+            {
+                line.ForEach(cell => Console.Write(cell + " | "));
+
+                Console.ReadLine();
+                Console.Clear();
+            }
+            else
+            {
+                line.ForEach(cell => Console.Write(cell + " | "));
+                Console.WriteLine();
+            }
         });
     }
 
