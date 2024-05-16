@@ -17,6 +17,24 @@ internal class Program
         Console.ReadLine();
 
         PrintAllEntrys(csvList);
+        Console.Clear();
+
+        SearchForEntryWithCity(Console.ReadLine(), csvList);
+    }
+
+    private static void SearchForEntryWithCity(string? v, CsvData csv)
+    {
+        Console.WriteLine("Aufgabe 7");
+
+        int cityColumn = csv.First().IndexOf("Stadt");
+
+        var filtered = csv.Where(line => line[cityColumn].Contains(v, StringComparison.CurrentCultureIgnoreCase)).ToList();
+
+        filtered.ForEach(line =>
+        {
+            line.ForEach(cell => Console.Write(cell + " | "));
+            Console.WriteLine();
+        });
     }
 
     private static void ListAllCostumerWithBdayEntry(CsvData csvList)
