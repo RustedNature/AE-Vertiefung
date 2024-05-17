@@ -6,7 +6,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        CsvParser.CsvReader csv = new(@"C:\Users\Nico\source\repos\C#\CsvParser\CsvParser\TestDaten.csv");
+        CsvParser.CsvReader csv = new();
         CsvData csvList = csv.ToList();
         GetCountPersonenNewsletter(csvList);
         PercantageOfGender(csvList);
@@ -15,7 +15,6 @@ internal class Program
         ListAllCostumerWithBdayEntry(csvList);
 
         Console.ReadLine();
-
         PrintAllEntrys(csvList);
         Console.Clear();
 
