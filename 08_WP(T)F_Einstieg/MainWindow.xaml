@@ -1,0 +1,70 @@
+﻿<Window x:Class="_08_WP_T_F_Einstieg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_08_WP_T_F_Einstieg"
+        mc:Ignorable="d"
+        Title="08_WP(T)F_Einstieg" Height="450" Width="800">
+
+    <Grid>
+        <TabControl>
+            <TabItem Header="Button">
+                <Button Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,25,25,0" Content="Hey!" Name="BTN_Hey" Click="BTN_Hey_Click" />
+            </TabItem>
+            <TabItem Header="Ein/Ausgabe">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Name="LBL_Eingabe" Grid.Row="1" Grid.ColumnSpan="3" Height="30" Width="500" Margin="0,0,0,55" HorizontalContentAlignment="Center" Content="Eingabe: " />
+                    <TextBox Name="TXB_Eingabe" Grid.Row="1" Grid.ColumnSpan="3" Height="20" Width="500" TextChanged="TextBox_TextChanged" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Container und kontrollobjekte">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Row="0" Height="25" Width="200" Name="BTN_Wrap" Content="WrapPanel" Click="BTN_Wrap_Click" />
+                    <Button Grid.Row="1" Height="25" Width="200" Name="BTN_StackPanel" Content="StackPanel" Click="BTN_Stack_Click" />
+                    <Button Grid.Row="2" Height="25" Width="200" Name="BTN_DockPanel" Content="DockPanel" Click="BTN_DockPanel_Click" />
+                    <Button Grid.Row="3" Height="25" Width="200" Name="BTN_Menue" Content="Menü" Click="BTN_Menue_Click" />
+                    <Button Grid.Row="4" Height="25" Width="200" Name="BTN_UebersichtRest" Content="Übersicht restlicher Elemente" Click="BTN_UebersichtRest_Click" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Browse und Image">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="16*" />
+                    </Grid.RowDefinitions>
+
+                    <Menu Grid.Row="0">
+                        <MenuItem Header="Open" Name="Open" Click="Open_Click" />
+                        <Separator />
+                        <MenuItem Header="Bild Entfernern" Name="Close" Click="Close_Click" />
+                    </Menu>
+
+                    <Image Grid.Row="1" Name="IMG_Test" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Listbox und Datagrid">
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

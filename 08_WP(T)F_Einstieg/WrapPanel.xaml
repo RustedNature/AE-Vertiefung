@@ -1,0 +1,31 @@
+﻿<Window x:Class="_08_WP_T_F_Einstieg.WrapPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_08_WP_T_F_Einstieg"
+        mc:Ignorable="d"
+        Title="WrapPanel" Height="450" Width="800">
+    <WrapPanel>
+        <Label Height="25" Width="150" Background="AntiqueWhite" />
+        <Label Width="150" Background="Black" />
+        <Label Width="150" Background="Green" />
+        <Label Width="150" Background="Tomato" />
+        <Label Width="150" Background="Bisque" />
+        <Label Width="150" Background="AliceBlue" />
+        <Label Height="85" Width="150" Background="LemonChiffon" />
+        <Label Width="150" Background="LightYellow" />
+        <Label Width="150" Background="LawnGreen" />
+        <Label Width="150" Background="Violet" />
+        <Label Width="150" Background="PaleGoldenrod" />
+        <Label Height="90" Width="150" Background="OldLace" />
+        <Label Width="150" Background="Thistle" />
+        <Label Width="150" Background="BurlyWood" />
+        <Label Width="150" Background="NavajoWhite" />
+        <Label Width="150" Background="DodgerBlue" />
+        <Label Width="150" Background="Turquoise" />
+        <Label Width="150" Background="OrangeRed" />
+        <Label  Width="150" Background="Gold" />
+        <Button Height="50" Width="150"  Name="BTN_Close" Content="Close" Click="BTN_Close_Click" />
+    </WrapPanel>
+</Window>

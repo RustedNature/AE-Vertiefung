@@ -6,7 +6,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        CsvParser.CsvReader csv = new();
+        CsvReader csv = new();
         CsvData csvList = csv.ToList();
         GetCountPersonenNewsletter(csvList);
         PercantageOfGender(csvList);
@@ -98,7 +98,6 @@ internal class Program
             if (line[emailColumn].Contains('@'))
             {
                 var split = line[emailColumn].Split('@');
-
                 if (emailProvider.TryGetValue(split[1], out int value))
                 {
                     emailProvider[split[1]] = ++value;

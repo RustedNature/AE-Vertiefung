@@ -1,0 +1,61 @@
+﻿<Window x:Class="A_03_WPF_Uebungen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A_03_WPF_Uebungen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Taschenrechner">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Label Name="LBL_Ergebnis" Content="Hallo testet" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4" />
+                    <Button Grid.Row="5" Grid.Column="0" Margin="5" Click="BTN_One" Content="1" FontSize="25" />
+                    <Button Grid.Row="5" Grid.Column="1" Margin="5" Click="BTN_Two" Content="2" FontSize="25" />
+                    <Button Grid.Row="5" Grid.Column="2" Margin="5" Click="BTN_Three" Content="3" FontSize="25" />
+                    <Button Grid.Row="5" Grid.Column="3" Margin="5" Click="BTN_Zero" Content="0" FontSize="25" />
+
+                    <Button Grid.Row="4" Grid.Column="0" Margin="5" Click="BTN_Four" Content="4" FontSize="25" />
+                    <Button Grid.Row="4" Grid.Column="1" Margin="5" Click="BTN_Five" Content="5" FontSize="25" />
+                    <Button Grid.Row="4" Grid.Column="2" Margin="5" Click="BTN_Six" Content="6" FontSize="25" />
+                    <Button Grid.Row="4" Grid.Column="3" Margin="5" Click="BTN_Calculate" Content="=" FontSize="25" />
+
+                    <Button Grid.Row="3" Grid.Column="0" Margin="5" Click="BTN_Seven" Content="7" FontSize="25" />
+                    <Button Grid.Row="3" Grid.Column="1" Margin="5" Click="BTN_Eight" Content="8" FontSize="25" />
+                    <Button Grid.Row="3" Grid.Column="2" Margin="5" Click="BTN_Nine" Content="9" FontSize="25" />
+                    <Button Grid.Row="3" Grid.Column="3" Margin="5" Click="BTN_Clear" Content="Clear" FontSize="25" />
+
+                    <Button Grid.Row="2" Grid.Column="0" Margin="5" Click="BTN_Multiply" Content="*" FontSize="25" />
+                    <Button Grid.Row="2" Grid.Column="1" Margin="5" Click="BTN_Divide" Content="/" FontSize="25" />
+                    <Button Grid.Row="2" Grid.Column="2" Margin="5" Click="BTN_Sum" Content="+" FontSize="25" />
+                    <Button Grid.Row="2" Grid.Column="3" Margin="5" Click="BTN_Subtract" Content="-" FontSize="25" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Palindrom?">
+                <StackPanel>
+                    <TextBox Width="250" Name="Input" Text="Wort zum prüfen hier eingeben" VerticalAlignment="Center" />
+                    <Button Width="200" Height="25" Content="Prüfen" Name="Check" Click="Check_Click"  Margin="5" />
+                    <TextBlock Width="250" Name="Output" Text="Ausgabe des ergebnises" VerticalAlignment="Center" />
+                </StackPanel>
+            </TabItem>
+            <TabItem></TabItem>
+        </TabControl>
+    </Grid>
+</Window>

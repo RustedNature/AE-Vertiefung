@@ -1,0 +1,27 @@
+﻿<Window x:Class="_08_WP_T_F_Einstieg.StackPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_08_WP_T_F_Einstieg"
+        mc:Ignorable="d"
+        Title="StackPanel" Height="450" Width="800">
+    <StackPanel>
+        <Label Height="25" Width="150" Background="AntiqueWhite" />
+        <Label Width="150" Background="Black" />
+        <Label Width="150" Background="Green" />
+        <Label Height="85" Width="150" Background="LemonChiffon" />
+        <Label Width="150" Background="Violet" />
+        <Label Width="150" Background="PaleGoldenrod" />
+        <Label Height="90" Width="150" Background="OldLace" />
+        <Label Width="150" Background="Thistle" />
+        <Label Width="150" Background="BurlyWood" />
+        <Label Width="150" Background="NavajoWhite" />
+        <Label Width="150" Background="DodgerBlue" HorizontalAlignment="Left" />
+        <Label Width="160" Background="Turquoise" HorizontalAlignment="Right" />
+        <Label  Background="OrangeRed" HorizontalContentAlignment="Center" />
+        <Label  Height="5" Width="150" Background="Gold" />
+        <Button Height="50" Width="750"  Name="BTN_Close" Content="Close" Click="BTN_Close_Click" />
+        <Button Height="50" Content="test" HorizontalAlignment="Stretch" Background="BlanchedAlmond" />
+    </StackPanel>
+</Window>
